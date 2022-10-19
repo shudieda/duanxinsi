@@ -9,16 +9,12 @@
             margin: 0;
             padding: 0;
         }
-
-        .wrapper {
-
-        }
     </style>
     <!-- 对话框样式 -->
     <style>
         .box {
             width: 1125px;
-            height: 1772px;
+            height: 1722px;
             background: rgb(254, 254, 254);
             position: relative;
             padding: 10px;
@@ -44,7 +40,7 @@
         /* 公共样式 */
         .left-text-input, .right-text-input {
             width: fit-content;
-            max-width: 760px;
+            max-width: 750px;
             box-sizing: border-box;
             border-radius: 30px;
             color: #333;
@@ -139,13 +135,13 @@
     <!-- 测试面板样式 -->
     <style>
         .function-box {
-            width: 600px;
+            width: 1300px;
             height: 2480px;
             position: relative;
             padding: 20px;
             box-sizing: border-box;
 
-            margin-left: 1350px;
+            margin-left: 1180px;
             margin-top: -2500px;
             background-color: rgb(218,185,149);
         }
@@ -228,6 +224,37 @@
 </head>
 <body oncontextmenu=self.event.returnValue=false style="background-color: rgb(218,185,149)">
 <button class="save-img" style="position: absolute; font-weight:550;color:rgb(218,185,149);background-color:rgb(218,185,149);border:none;margin-left:2000px;margin-top:30px;font-size: 40px;"> 保存图片</button>
+<div class="bbox">
+    <div style="height: 351px;width: 1125px;background-color: rgb(246,246,246);border-bottom:1px solid rgb(178,178,178)">
+        <img src="tutu/dx-sc/4-1.png" style="margin-top: 161px;margin-left: 38px;float: left;clear: both;">
+        <img src="tutu/dx-sc/4-2.png" style="float: left;clear: both;margin-left: 502px;margin-top: -84px;width: 119px;height: 121px;">
+        <div style="display: flex;">
+            <div style="display: inline-block; text-align: center;position:relative;margin-left:100px;width:800px;top:270px;">
+                <div contenteditable class="hm" style="display: inline-block; text-shadow: 0px 1px rgb(60,60,60);font-family:PingFang SC Regular;font-size:40px;">95566</div>
+                <div style="display: inline-block;background-image: url('tutu/dx-sc/4-3.png');background-repeat: no-repeat;width: 20px;height: 23px;"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 微信盒子 -->
+    <div class="box">
+        <div id="container"></div>
+        <!-- 测试代码 -->
+        <!--<div class="dialog-item">-->
+        <!--    <div class="left-head-img"></div>-->
+        <!--    <div class="left-text-input" contenteditable>点击可以编辑</div>-->
+        <!--</div>-->
+        <!--<div class="dialog-item">-->
+        <!--    <div class="right-text-input" contenteditable>点击可以编辑</div>-->
+        <!--    <div class="right-head-img"></div>-->
+        <!--</div>-->
+    </div>
+    <div>
+        <img src="tutu/dx-sc/4-4.png" style="display: block">
+        <img src="tutu/dx-sc/4-5.png" style="width: 1125px;height: 235px;">
+    </div>
+</div>
+<!-- 侧边 功能区 -->
 <div class="function-box">
 
     <!-- 对话框 -->
@@ -381,7 +408,6 @@
 
 <div style="position: absolute;left:2380px;top:150px;width: 500px;height: 2000px;">
 
-
     <a class="dxy" href="http://sblaojiaoshu.com/duanxinyi/" style="position: absolute; top:-50px;left: 20px;">
         <img src="tutu/dxy.png" style="width: 450px; height: 219px;">
     </a>
@@ -398,7 +424,6 @@
         <img src="tutu/dxsix.png" style="width: 450px; height: 219px;">
     </a>
 
-
 </div>
 
 <!-- 引入 emoji -->
@@ -408,12 +433,7 @@
 <!-- 引入自行封装的截图插件 -->
 <script src="screen-shot.js"></script>
 
-<script>
-    var ua = navigator.userAgent;
-    if (ua !== "Mozilla/5.0 (Windows NT 10.0; Win64; x64; ed)") {
-        document.querySelector("body").style = "display: none;"
-    }
-</script>
+
 
 <script>
     function handleSelectChange() {
